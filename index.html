@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ByteStore | Inventario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <a class="brand" href="#">▣ Byte<span>Store</span></a>
+        <p class="nav-label">MENÚ PRINCIPAL</p>
+        <nav>
+            <a href="#">⌂ &nbsp; Inicio</a>
+            <a class="active" href="#">▦ &nbsp; Inventario</a>
+            <a href="#">⇄ &nbsp; Movimientos</a>
+            <a href="#">◫ &nbsp; Categorías</a>
+        </nav>
+        <div class="profile"><strong>Administrador</strong><small>Encargado de tienda</small></div>
+    </aside>
+
+    <main>
+        <header class="topbar"><span>Tienda / <strong>Inventario</strong></span><span>Gestión de almacén</span></header>
+        <section class="heading">
+            <div>
+                <p class="eyebrow">GESTIÓN DE ALMACÉN</p>
+                <h1>Inventario</h1>
+                <p class="subtitle">Administra los productos y el stock de tu tienda.</p>
+            </div>
+            <button class="primary">＋ Nuevo producto</button>
+        </section>
+
+        <section class="stats">
+            <article><small>Total de productos</small><strong>128</strong><span>En catálogo</span></article>
+            <article><small>Stock disponible</small><strong>1,846</strong><span class="green">unidades</span></article>
+            <article><small>Stock bajo</small><strong>8</strong><span class="orange">Requiere atención</span></article>
+            <article><small>Valor del inventario</small><strong>S/ 284,590</strong><span>Valor estimado</span></article>
+        </section>
+
+        <section class="panel">
+            <div class="panel-heading">
+                <div>
+                    <h2>Productos</h2>
+                    <p>Consulta y administra los artículos de tu almacén.</p>
+                </div><button>⇩ Exportar</button>
+            </div>
+            <div class="toolbar">
+                <input type="search" placeholder="Buscar por nombre, marca o SKU...">
+                <select>
+                    <option>Todas las categorías</option>
+                    <option>Laptops</option>
+                    <option>Componentes</option>
+                    <option>Periféricos</option>
+                </select>
+                <select>
+                    <option>Cualquier stock</option>
+                    <option>Stock bajo</option>
+                    <option>Sin stock</option>
+                </select>
+            </div>
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>PRODUCTO</th>
+                            <th>SKU</th>
+                            <th>CATEGORÍA</th>
+                            <th>PRECIO</th>
+                            <th>STOCK</th>
+                            <th>ESTADO</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Laptop Lenovo IdeaPad 3</strong><small>Lenovo · Ryzen 5</small></td>
+                            <td>LAP-LEN-001</td>
+                            <td>Laptops</td>
+                            <td>S/ 2,499.00</td>
+                            <td>24 unid.</td>
+                            <td><span class="badge available">Disponible</span></td>
+                            <td><button>···</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Monitor LG UltraGear 24”</strong><small>LG · Full HD / 144 Hz</small></td>
+                            <td>MON-LG-014</td>
+                            <td>Monitores</td>
+                            <td>S/ 899.00</td>
+                            <td>3 unid.</td>
+                            <td><span class="badge low">Stock bajo</span></td>
+                            <td><button>···</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Teclado Redragon Kumara</strong><small>Redragon · Switches rojos</small></td>
+                            <td>TEC-RED-032</td>
+                            <td>Periféricos</td>
+                            <td>S/ 189.00</td>
+                            <td>18 unid.</td>
+                            <td><span class="badge available">Disponible</span></td>
+                            <td><button>···</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Memoria RAM Kingston Fury 16GB</strong><small>Kingston · DDR4 / 3200 MHz</small>
+                            </td>
+                            <td>RAM-KIN-008</td>
+                            <td>Componentes</td>
+                            <td>S/ 169.00</td>
+                            <td>0 unid.</td>
+                            <td><span class="badge none">Sin stock</span></td>
+                            <td><button>···</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mouse Logitech G203</strong><small>Logitech · 8,000 DPI / RGB</small></td>
+                            <td>MOU-LOG-021</td>
+                            <td>Periféricos</td>
+                            <td>S/ 109.00</td>
+                            <td>31 unid.</td>
+                            <td><span class="badge available">Disponible</span></td>
+                            <td><button>···</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <footer>Mostrando 1–5 de 128 productos <span>‹ &nbsp; 1 &nbsp; 2 &nbsp; 3 &nbsp; … &nbsp; 26 &nbsp; ›</span>
+            </footer>
+        </section>
+    </main>
+</body>
+
+</html>
